@@ -1,81 +1,93 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.navbar {
+  min-height: 100vh;
   display: flex;
-  background-color: #14221a;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
 }
 
-.logo a {
-  font-size: 24px;
-  font-weight: bolder;
-  color: #f9faf8;
-  text-decoration: none;
+.header {
+  background-color: #1f2937;
+  display: flex;
+  flex-direction: column;
 }
 
-.links {
+ul {
   list-style: none;
   display: flex;
+  justify-content: flex-end;
+  gap: 16px;
 }
 
-.links li {
-  margin-right: 20px;
+ul,
+.header-logo,
+.photo-area,
+.container-left {
+  width: 400px;
 }
 
-.links a {
-  color: white;
+a {
   text-decoration: none;
-  font-size: 16px;
-  transition: color 0.3s ease;
+  color: #e5e7eb;
+  font-size: 18px;
 }
 
-.links a:hover {
-  color: #29ce00;
+h1,
+p,
+ul,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-/* Header Section */
-.header {
+.header-logo {
+  color: #e5e7eb;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.top {
+  margin-top: 20px;
+}
+
+.top,
+.top2 {
   display: flex;
-  padding: 50px;
-  background-color: #14221a;
-  color: #ffffff;
-  justify-content: space-around;
-  align-items: center;
-  padding: 50px 300px 50px 300px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 50px;
 }
 
-header img {
-  width: 600px;
-  border-radius: 12px;
-}
-
-h2 {
+.header-awesome {
   font-size: 48px;
-  font-weight: 800;
-  line-height: 1.2;
+  font-weight: 900;
   color: #f9faf8;
 }
 
-p {
-  margin-bottom: 15px;
-}
-
-button {
-  background-color: #68ffa2;
-  color: #000000;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
+.paragraph-hero {
   font-size: 18px;
-  transition: background-color 0.3s ease;
+  color: #e5e7eb;
 }
 
-button:hover {
-  background-color: #9bd7ff;
+.button {
+  background-color: #3882f6;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 5px;
+  padding-bottom: 2px;
+}
+
+img {
+  border-radius: 12px;
+}
+
+.container-left {
+  width: 400px;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
 }
